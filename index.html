@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assidnment_No 14</title>
+</head>
+
+<body>
+    <ul>
+        <li id="f"></li>
+        <li id="i"></li>
+        <li id="age"></li>
+    </ul>
+
+    <!--                                                  TASK -->
+
+
+    <!--                                                      Task#01              -->
+    <h1 id="jspara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente accusantium eaque architecto enim
+        asperiores optio sit minima quae rerum, eos expedita numquam quaerat debitis minus, reiciendis tempore error
+        porro animi?</h1>
+
+    <!--                                                      Task#02              -->
+    <p id="para1" class="allpara">Ths is paragraph</p>
+    <h1 class="allpara">Web Developemnt Course</h1>
+
+
+    <script>
+        var x = 4;
+        const y = 8;
+        let z = x + y;
+
+        var mycolor = "Purple";
+
+        var FName = "Lucy", IName = "John", Age = "25";
+
+
+        console.log("If x:", x, "and", "y:", y, "then Sum is", z)
+        console.log("My color is:", mycolor)
+        console.log(FName, IName, Age)
+
+
+        document.getElementById("f").innerHTML = "Lucy";
+        document.getElementById("i").innerHTML = "John";
+        document.getElementById("age").innerHTML = "25";
+
+        //                                             TASK          
+
+        // document.getElementById("jspara").style.backgroundColor="yellow";
+        // document.getElementById("jspara").style.fontSize = "20px";
+        // document.getElementById("jspara").style.color = "red";
+
+        //                                             Task#01
+        document.getElementById("jspara").style.cssText = " background-color: yellow; font-size: 20px; color: red;";
+        //                 the term ".csstext" is very important while we are using the multiple css properties at once.
+
+        //                                             Task#02
+        document.getElementsByClassName("allpara")[0].style.color = "red";
+        document.getElementsByClassName("allpara")[1].style.color = "red";
+    </script>
+</body>
+
+</html>
